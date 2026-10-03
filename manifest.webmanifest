@@ -1,0 +1,95 @@
+{
+  "id": "./",
+  "name": "Sieve AI",
+  "short_name": "Sieve AI",
+  "description": "Sieve AI by Mohammed Fardeen Khan checks coursework for plagiarism, references, AI-style writing and ATS keyword match, with free grammar, rewrite, paraphrase and summary tools that learn from you. It runs on your device, works offline and encrypts the work it saves.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ecf1ef",
+  "theme_color": "#0b5e57",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Sieve AI showing an essay with similarity highlights, four check dials and the list of things to fix"
+    },
+    {
+      "src": "screenshots/mobile.png",
+      "sizes": "412x915",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Sieve AI on a phone, with the four check dials above the essay"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New check",
+      "short_name": "New",
+      "description": "Start a check with an empty document",
+      "url": "./?action=new",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document": [
+          ".docx"
+        ],
+        "application/pdf": [
+          ".pdf"
+        ],
+        "text/plain": [
+          ".txt"
+        ]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "./",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
